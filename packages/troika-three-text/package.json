@@ -1,5 +1,5 @@
 {
-  "name": "troika-three-text",
+  "name": "@minisheep/troika-three-text",
   "version": "0.52.3",
   "description": "SDF-based text rendering for Three.js",
   "author": "Jason Johnston <jason.johnston@protectwise.com>",
@@ -20,17 +20,20 @@
     "webgl-sdf-generator": "1.1.1"
   },
   "peerDependencies": {
-    "three": ">=0.125.0"
+    "three": ">=0.125.0",
+    "@minisheep/three-platform-adapter": ">=1.2.7"
   },
   "devDependencies": {
     "@lojjic/typr": "0.3.8-lojjic1",
     "@unicode-font-resolver/client": "1.0.2",
     "fflate": "^0.7.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "@minisheep/three-platform-adapter": "^1.2.7"
   },
   "scripts": {
     "build-typr": "rollup -c rollup.config.build-typr.js",
     "build-woff2otf": "rollup -c rollup.config.build-woff2otf.js",
-    "build-unicode-font-resolver": "rollup -c rollup.config.build-unicode-font-resolver.js"
+    "build-unicode-font-resolver": "rollup -c rollup.config.build-unicode-font-resolver.js",
+    "publish": "pnpm publish --registry=https://npm.minisheep.cn"
   }
 }
