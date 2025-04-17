@@ -1,5 +1,5 @@
 import { defineWorkerModule, terminateWorker } from 'troika-worker-utils'
-import createSDFGenerator from 'webgl-sdf-generator'
+import createSDFGenerator from '@minisheep/webgl-sdf-generator'
 
 const now = () => (self.performance || Date).now()
 

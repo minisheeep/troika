@@ -17,7 +17,7 @@
     "bidi-js": "^1.0.2",
     "troika-three-utils": "^0.52.4",
     "troika-worker-utils": "^0.52.0",
-    "webgl-sdf-generator": "1.1.1"
+    "@minisheep/webgl-sdf-generator": "1.1.1"
   },
   "peerDependencies": {
     "three": ">=0.125.0",
@@ -34,6 +34,5 @@
     "build-typr": "rollup -c rollup.config.build-typr.js",
     "build-woff2otf": "rollup -c rollup.config.build-woff2otf.js",
     "build-unicode-font-resolver": "rollup -c rollup.config.build-unicode-font-resolver.js",
-    "publish": "pnpm publish --registry=https://npm.minisheep.cn"
   }
 }
