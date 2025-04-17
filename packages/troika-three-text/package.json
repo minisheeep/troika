@@ -33,6 +33,6 @@
   "scripts": {
     "build-typr": "rollup -c rollup.config.build-typr.js",
     "build-woff2otf": "rollup -c rollup.config.build-woff2otf.js",
-    "build-unicode-font-resolver": "rollup -c rollup.config.build-unicode-font-resolver.js",
+    "build-unicode-font-resolver": "rollup -c rollup.config.build-unicode-font-resolver.js"
   }
 }

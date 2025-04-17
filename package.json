@@ -55,7 +55,7 @@
     "build-unicode-font-resolver": "lerna exec --scope=@minisheep/troika-three-text -- npm run build-unicode-font-resolver",
     "build-woff2otf": "lerna exec --scope=@minisheep/troika-three-text -- npm run build-woff2otf",
     "build:three-text": "lerna exec --scope=@minisheep/troika-three-text -- rollup -c ../../rollup.config.js",
-    "minisheep:release": "lerna exec --scope=@minisheep/troika-three-text -- npm run publish"
+    "minisheep:release": "lerna exec --scope=@minisheep/troika-three-text -- npm publish --registry=https://npm.minisheep.cn"
   },
   "husky": {
     "hooks": {

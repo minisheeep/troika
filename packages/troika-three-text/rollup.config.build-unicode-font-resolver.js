@@ -32,6 +32,16 @@ export default {
   // input: LERNA_ROOT_PATH + '/../unicode-font-resolver/packages/client/dist/client.esm.js',
   plugins: [
     nodeResolve(),
+    {
+      transform(code,id){
+        return {
+          // simplistic replace
+          // 小程序环境不支持  Unicode property escapes
+          // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape
+          code: code.replace(/function\sdetectLanguage\(text\) \{\n/, ($0)=> $0+'\n return "en";'),
+        }
+      }
+    },
     buble({
       transforms: {
         unicodeRegExp: false
@@ -39,7 +49,7 @@ export default {
     }),
     terser({
       ecma: 5
-    })
+    }),
   ],
   output: {
     format: 'iife',
